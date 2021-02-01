@@ -33,10 +33,10 @@ jobs:
       - name: Install compilers
         run: |
           sudo apt-get update
-          sudo apt-get install grub-efi
+          sudo apt-get install -y grub-efi
           sudo update-grub
-          sudo apt-get upgrade
-          sudo apt-get install g++-10 gfortran-10 grub-efi
+          sudo apt-get -y upgrade
+          sudo apt-get install -y g++-10 gfortran-10 grub-efi
         if: matrix.os == 'ubuntu-20.04'
 
       - name: Get Spack
