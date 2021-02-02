@@ -53,6 +53,7 @@ jobs:
           spack env activate cpp
           echo "  concretization: together" >> ./spack/var/spack/environments/cpp/spack.yaml
           spack add fenics-dolfinx
+          spack add cmake pkgconfig eigen py-fenics-basix py-fenics-ffcx
           spack -v install
 
       - name: Get DOLFIN-X code (to access test files)
