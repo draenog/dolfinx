@@ -46,7 +46,7 @@ if (DEFINED ENV{BASIX_PREFIX_DIR})
 
   if (EXISTS "$ENV{BASIX_PREFIX_DIR}/include/basix.h")
     set(BASIX_INCLUDE_DIRS $ENV{BASIX_PREFIX_DIR}/include CACHE STRING "Where to find basix.h")
-    set(BASIX_LIBRARY $ENV{BASIX_PREFIX_DIR}/lib/basix.so)
+    set(BASIX_LIBRARY $ENV{BASIX_PREFIX_DIR}/lib/libbasix.so)
     # Assume user knows what they are doing.
     set(BASIX_VERSION ${BASIX_FIND_VERSION})
     set(BASIX_VERSION_OK TRUE)
